@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  web:
+    build: ./mustafaBey
+    command: python3 mustafaBey.py run -h 0.0.0.0
+    volumes:
+      - ./mustafaBey/:/usr/src/app/
+    ports:
+      - 5001:5000
+
+
+
+
